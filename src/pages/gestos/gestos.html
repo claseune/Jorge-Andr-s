@@ -1,0 +1,34 @@
+<!--
+  Generated template for the GestosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>gestos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-card (swipe)="swipeEvent($event)">
+    <ion-item>
+      Deslizar: {{swipe}}
+      </ion-item>
+        </ion-card>
+
+        <ion-card (tap)="tapEvent($event)">
+    <ion-item>
+      Tap:{{tap}}
+      </ion-item>
+        </ion-card>
+        
+        <ion-card (press)="pressEvent($event)">
+  <ion-item>
+    Presionar: {{press}}
+  </ion-item>
+</ion-card>
+</ion-content>
